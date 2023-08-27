@@ -43,3 +43,6 @@ fn main() {
 fn fahrenheit_to_celsius(value: f32) -> f32 {
     (value - 32) * 5 / 9
 }
+fn celsius_to_fahrenheit(value: f32) -> f32 {
+    ((value * 9) / 5) + 32
+}
