@@ -16,6 +16,16 @@ fn main() {
             0
         }
     };
+    let mut conversion_value_input = String::new();
+    io::stdin()
+        .read_line(&mut conversion_value_input)
+        .expect("Failed to read line");
+    let conversion_value_input: u32 = match conversion_value_input.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            panic!("Please enter a number");
+        }
+    };
     // control flow of the conversion
     let conversion_method:&str;
     if conversion_method_input == 1 {
