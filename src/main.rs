@@ -28,17 +28,15 @@ fn main() {
         }
     };
     // control flow of the conversion
-    let conversion_method:&str;
     if conversion_method_input == 1 {
-        conversion_method = "Fahrenheit to Celsius";
+        println!("You choose convert Fahrenheit to Celsius method")
     }
     else if conversion_method_input == 1 {
-        conversion_method = "Celsius to Fahrenheit";
+        println!("You choose convert Celsius to Fahrenheit method")
     }
     else {
         panic!("That conversion is not listed here.")
     }
-    println!("You choose convert method {}", conversion_method)
 }
 fn fahrenheit_to_celsius(value: f32) -> f32 {
     (value - 32) * 5 / 9
