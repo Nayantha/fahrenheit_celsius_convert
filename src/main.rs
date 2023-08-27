@@ -9,11 +9,18 @@ fn main() {
     io::stdin()
         .read_line(&mut conversion_method_input)
         .expect("Failed to read line");
+    let conversion_method_input: u32 = match conversion_method_input.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Please enter a number");
+            0
+        }
+    };
     // control flow of the conversion
     let mut conversion_method:&str;
-    if conversion_method_input =="1" {
+    if conversion_method_input == 1 {
         conversion_method = "Fahrenheit to Celsius";
-    } else if conversion_method_input == "2" {
+    } else if conversion_method_input == 1 {
         conversion_method = "Celsius to Fahrenheit";
     } else {
         conversion_method = "else";
