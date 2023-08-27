@@ -17,13 +17,13 @@ fn main() {
         }
     };
     // control flow of the conversion
-    let mut conversion_method:&str;
+    let conversion_method:&str;
     if conversion_method_input == 1 {
         conversion_method = "Fahrenheit to Celsius";
     } else if conversion_method_input == 1 {
         conversion_method = "Celsius to Fahrenheit";
     } else {
-        conversion_method = "else";
+        panic!("That conversion is not listed here.")
     }
-    println!("You choose convert method {}-{}", conversion_method, conversion_method_input)
+    println!("You choose convert method {}", conversion_method)
 }
