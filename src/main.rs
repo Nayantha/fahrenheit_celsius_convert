@@ -9,6 +9,7 @@ fn main() {
     io::stdin()
         .read_line(&mut conversion_method_input)
         .expect("Failed to read line");
+    // control flow of the conversion
     let mut conversion_method:&str;
     if conversion_method_input =="1" {
         conversion_method = "Fahrenheit to Celsius";
