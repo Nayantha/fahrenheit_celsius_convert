@@ -21,7 +21,7 @@ fn main() {
     io::stdin()
         .read_line(&mut conversion_value_input)
         .expect("Failed to read line");
-    let _conversion_value_input: u32 = match conversion_value_input.trim().parse() {
+    let _conversion_value_input: f32 = match conversion_value_input.trim().parse() {
         Ok(num) => num,
         Err(_) => {
             panic!("Please enter a number");
