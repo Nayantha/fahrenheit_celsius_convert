@@ -32,7 +32,7 @@ fn main() {
         println!("You choose convert Fahrenheit to Celsius method");
         println!("{}F is {}C", conversion_value_input, fahrenheit_to_celsius(conversion_value_input))
     }
-    else if conversion_method_input == 1 {
+    else if conversion_method_input == 2 {
         println!("You choose convert Celsius to Fahrenheit method");
         println!("{}C is {}F", conversion_value_input, celsius_to_fahrenheit(conversion_value_input))
     }
