@@ -12,8 +12,7 @@ fn main() {
     let conversion_method_input: u32 = match conversion_method_input.trim().parse() {
         Ok(num) => num,
         Err(_) => {
-            println!("Please enter a number");
-            0
+            panic!("Please enter a number");
         }
     };
     let mut conversion_value_input = String::new();
