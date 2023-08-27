@@ -40,3 +40,6 @@ fn main() {
     }
     println!("You choose convert method {}", conversion_method)
 }
+fn fahrenheit_to_celsius(value: f32){
+    (value - 32) * 5 / 9
+}
