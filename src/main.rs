@@ -29,9 +29,11 @@ fn main() {
     let conversion_method:&str;
     if conversion_method_input == 1 {
         conversion_method = "Fahrenheit to Celsius";
-    } else if conversion_method_input == 1 {
+    }
+    else if conversion_method_input == 1 {
         conversion_method = "Celsius to Fahrenheit";
-    } else {
+    }
+    else {
         panic!("That conversion is not listed here.")
     }
     println!("You choose convert method {}", conversion_method)
