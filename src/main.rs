@@ -21,7 +21,7 @@ fn main() {
     io::stdin()
         .read_line(&mut conversion_value_input)
         .expect("Failed to read line");
-    let _conversion_value_input: f32 = match conversion_value_input.trim().parse() {
+    let conversion_value_input: f32 = match conversion_value_input.trim().parse() {
         Ok(num) => num,
         Err(_) => {
             panic!("Please enter a number");
@@ -29,10 +29,12 @@ fn main() {
     };
     // control flow of the conversion
     if conversion_method_input == 1 {
-        println!("You choose convert Fahrenheit to Celsius method")
+        println!("You choose convert Fahrenheit to Celsius method");
+        println!("{}F is {}C", conversion_value_input, fahrenheit_to_celsius(conversion_value_input))
     }
     else if conversion_method_input == 1 {
-        println!("You choose convert Celsius to Fahrenheit method")
+        println!("You choose convert Celsius to Fahrenheit method");
+        println!("{}C is {}F", conversion_value_input, celsius_to_fahrenheit(conversion_value_input))
     }
     else {
         panic!("That conversion is not listed here.")
